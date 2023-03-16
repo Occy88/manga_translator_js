@@ -6,15 +6,26 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@vitalets/google-translate-api": "^9.1.0",
+    "blob-to-buffer": "^1.2.9",
+    "canvas": "^2.11.0",
+    "chai": "^4.3.7",
+    "googletrans": "^1.0.4",
+    "mocha": "^10.2.0",
+    "node-tesseract": "^0.2.7",
+    "node-tesseract-ocr": "^2.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "tesseract.js": "^4.0.2",
+    "tesseract.js-node": "^0.1.0",
+    "web-vitals": "^2.1.4",
+    "worker-threads": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "mocha --require esm --timeout 10000 --recursive 'src/**/*.mocha.test.mjs'",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
