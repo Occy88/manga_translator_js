@@ -21,5 +21,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-node_modules
-chi_sim.traineddata chi_tra.traineddata eng.traineddata fra.traineddata spa.traineddata
+*.traineddata
